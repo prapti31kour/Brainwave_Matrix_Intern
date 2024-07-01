@@ -1,0 +1,108 @@
+body {
+    /* background-color: #98d1d229; */
+    background-color: #ffe4e1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-image: url('images/to_do.jpg');
+    /* background: #8ac1fc; */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #01080f;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #01080f;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="datetime-local"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button, .nav-button {
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover, .nav-button:hover {
+    background: #2980b9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #bdc3c7;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #ecf0f1;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-buttons button {
+    padding: 5px 10px;
+    background: #ae4a3f;
+    color: #080606;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-buttons button:hover {
+    background: #c0392b;
+}
+
+.task-buttons button:nth-child(1) {
+    background: #27ae60;
+}
+
+.task-buttons button:nth-child(1):hover {
+    background: #1e8449;
+}

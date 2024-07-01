@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style_to.css">
+</head>
+<body>
+    <div class="container">
+        <h1>"Procrastination is the thief of time"</h1>
+    
+        <h3>Add your tasks here</h3>
+        <input type="text" id="taskInput" placeholder="Enter your task">
+        <input type="datetime-local" id="taskDateTime">
+        <button onclick="addTask()">Add Task</button>
+        <!-- Button to navigate to tasks.html -->
+        <a href="tasks.html" class="nav-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 11h-6.41l1.41-1.41L10 8.17 5.84 12.3l1.41 1.41H7v2h6v-2h-1.59l-1.41-1.41 1.58-1.58L16 14.17l4.16-4.13-1.41-1.41z"/>
+            </svg>
+            View Tasks
+        </a>
+        
+        <ul id="taskList"></ul>
+    </div>
+    <script src="scripts_to.js"></script>
+</body>
+</html>

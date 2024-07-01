@@ -1,0 +1,41 @@
+body {
+    background-color: #ffe4e1;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #999;
+}
