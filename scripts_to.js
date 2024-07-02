@@ -30,7 +30,7 @@ function renderTasks() {
         const li = document.createElement('li');
         li.className = task.done ? 'done' : '';
         li.innerHTML = `
-            <span>${task.text} - ${task.dateTime}</span>
+            <span>${task.text} - ${formatDateTime(task.dateTime)}</span>
             <div class="task-buttons">
                 <button onclick="toggleDone(${task.id})">${task.done ? 'Undo' : 'Done'}</button>
                 <button onclick="deleteTask(${task.id})">Delete</button>
@@ -38,6 +38,14 @@ function renderTasks() {
         `;
         taskList.appendChild(li);
     });
+}
+
+function formatDateTime(dateTimeString) {
+    const date = new Date(dateTimeString);
+    const formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    return `${formattedDate} ${hours}:${minutes}`;
 }
 
 function toggleDone(id) {
