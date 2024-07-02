@@ -1,24 +1,33 @@
 body {
-    /* background-color: #98d1d229; */
-    background-color: #ffe4e1;
+    background-image: url('images/mm.jpg');
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 40px;
-    background-image: url('images/to_do.jpg');
-    /* background: #8ac1fc; */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjusted width */
+    max-width: 600px; /* Added max-width for responsiveness */
+    padding: 40px; /* Adjusted padding */
+    background-image: url('images/mm.jpg'); /* Background image */
+    background-size: cover;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 
+        0 0 20px 10px rgba(0, 0, 0, 0.2), /* Multiple shadows for textured appearance */
+        0 0 30px 20px rgba(0, 0, 0, 0.2),
+        0 0 40px 30px rgba(0, 0, 0, 0.2),
+        0 0 50px 40px rgba(0, 0, 0, 0.2),
+        0 0 60px 50px rgba(0, 0, 0, 0.2);
     text-align: center;
+    transform: perspective(1000px) rotateX(15deg); /* 3D transform */
 }
 
 h1 {
-    color: #01080f;
+    color: #083057;
     margin-bottom: 20px;
 }
 
